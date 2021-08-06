@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style-contact.css">
+    <title>Page contact : Aux deux aiguilles</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header2 container">
+                <div>
+                    <img class="logo" src="./assets/images/a.png" alt="logo">
+                </div>
+                <div class="feuille-contact">
+                    <img class="imgfeuille3"src="./assets/images/feuille3.png" alt="logo">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="textleft">
+            <h3>Vous avez une question, vous rencontrez des difficultés sur un ouvrage, n'hésitez pas et contactez-moi !</h3>
+        </div>
+        <div class="taille-form">
+            <form action="contact.php" method="get" class="formright">
+                <div class="label">
+                    <label for="nom"><p>Votre nom</p></label>
+                    <label for="objet"><p>L'objet</p></label>
+                    <label for="objet"><p>Votre message</p></label>
+                    <label for="objet"><p></p></label>
+                </div>
+                <div class="input">
+                    <p>Votre Nom</p>
+                    <input type="text" name="nom">
+                    <p>L'objet</p>
+                    <input type="text" name="objet">
+                    <p>Votre Message</p>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    <input type="email" name="mail" id="" placeholder="Votre email">
+                    <div class="btn">
+                        <input id="modif-taille-btn"type="submit"name="envoyer" value="Envoyer"> 
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+    </section>
+    
+</body>
+</html>

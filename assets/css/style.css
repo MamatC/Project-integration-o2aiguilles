@@ -1,0 +1,880 @@
+/*Variables*/
+:root {
+    --white: #fffff;
+    --dark-green: #677E52;
+    --light-green: #b7ca79;
+    --dark-grey:  #8B8B8B;
+    --grey: #b0cc99;
+    --beige: #f6e8b1;
+    --lanvander: #d1bfd5;
+    --black: #2c2c2c;
+
+}
+
+/* configuration des polices */
+@font-face {
+    font-family: "caroline";
+    src: url("../font/caroline.otf");
+}
+
+* {
+    font-size: 16px;
+}
+
+/*fond*/
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+.centrer {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/*------------------------*/
+/*--- Barre Navigation ---*/
+
+.headfond {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+}
+
+.headergauche {
+    width: 8%;
+}
+
+.headerdroit {
+    width: 92%;
+    text-align: right;
+    margin-right: 2%;
+    font-size: 1em;
+}
+
+.bonhomme {
+    width: 27px;
+}
+
+.lien {
+    color: var(--black);
+    text-decoration: none;
+    font-family: "caroline";
+    font-size: 2em;
+    margin-right: 2%;
+}
+
+.btn-header {
+    text-decoration: none;
+    background-color: var(--dark-green);
+    color: var(--black);
+    padding: 5px 30px; 
+    border-radius: 100px; 
+    transition: background-color 500ms;
+    font-family: "caroline";
+    font-size: 2.3em;
+}
+
+/*---------------*/
+/*--- Bandeau ---*/
+
+    /*traits vert*/
+hr {
+    border: 10px solid var(--dark-green);
+    margin: 0;
+    margin-top: -4px;
+}
+
+.img-jungle-bandeau {
+    width: 100%;
+}
+
+.img-logo-bandeau {
+    width: 41.7%;
+    position: absolute;
+    left: 0%; right: 0%;
+    margin: auto;
+}
+
+.img-ellipse {
+    width: 13%;
+    position: absolute;
+    transform: translateY(-50%);
+    left:-20px;
+}
+
+/*-------------------*/
+/*---Section Intro---*/
+
+/*souligne "vous"*/
+section div p .souligne {
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.container-intro {
+    padding-top: 5%;
+}
+
+    /*Entête "Bonjour"*/
+.text-intro p {
+    width: 83%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: 'Calibri', sans-serif;
+    font-size: 0.5em;
+    font-weight: bold;
+    line-height: 0em;
+}
+
+    /*espace interligne*/
+.pmarge  {
+    margin-bottom: 6%!important;
+}
+
+    /*Bloc: imgfemme + blocktext*/
+.bloc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+
+/*.imgfemme {
+    width: 170%;
+    margin-left: 85px;
+}*/
+
+.blocktext {
+    padding-left: 203px;
+    padding-right: 10px;
+    font-size: 2em;
+    padding-top: 14%;
+}
+
+    /*Texte Calibri "Dans ma famille"*/
+.blocktext h3 {
+    line-height: 37px;
+    margin: auto;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    height: 80px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 0.20em;
+    margin-bottom: 6%;
+}
+
+    /*Texte Caroline "Sur ce site"*/
+section .blocktext p {
+    line-height: 0.9em;
+    font-family: "caroline";
+    font-size: 0.4em;  
+    margin-top: 20%;
+}
+
+section .oups { /*corrige la taille du texte*/
+    font-size: 4em; 
+    /*width: 78%;*/
+    margin: auto;
+}
+
+/*section1*/
+
+.img1 {
+    width: 100%;
+}
+
+.img2 {
+    width: 41.7%;
+    position: absolute;
+    left: 0%; right: 0%;
+    margin: auto;
+}
+
+.img3 {
+    width: 10%;
+    position: absolute;
+    transform: translateY(-65%);
+    left:-20px
+}
+
+.imgfeuille1{
+    position: absolute;
+    left: 0;
+    transform: translateY(-82%);
+
+ 
+}
+.imgfeuille2{
+    position: absolute;
+    width: 20%;
+    right: 0;
+}
+
+/*SECTION2 PRESENTATION*/
+.container-intro {
+    margin: auto;
+}
+
+.polices2 p {
+    font-size: 2em;
+}
+
+.imgfemme {
+    width: 170%;
+    margin-left: 85px;
+
+}
+.imgfeuille3{
+    position: absolute;
+    width: 12%;
+    left: 0;
+    transform: translateY(458%);
+}
+.imgfeuille4{
+    position: absolute;
+    width: 12%;
+    right: 0;
+    top: 253%;
+}
+
+/*SECTION 3 'DES ASTUCES*/
+
+/* création h1 'Des astuces pour...' avec un width 
+pour réduire ou augmenter l'espacement entre les lettres et le trait*/
+section .titre{
+    font-family: "caroline";
+    font-size: 4em;
+    font-weight: lighter;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    background-color:white;
+    position: relative;
+    z-index: 1;
+}
+
+/* création des 2 h2 'Faire un noeud' et 'Monter des mailles' centrés */
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* création div englobant 3 cards dans la section 3'Des astuces*/
+section .cards{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* création paragraphe de la section 3 'Des astuces' */
+.para-section-3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    width: 35%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+/* configuration card logo youtube centré et l'un au dessus de l'autre*/
+.imgyoutube{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 80px;
+}
+/* redimension image et logo */
+.imgnoeud {
+    width: 60%;
+    margin: auto;
+}
+.imgmaille {
+    width: 60%;
+    margin: auto;
+}
+.img-play-youtube{
+    width: 30%;
+}
+.img-logo-youtube{
+    width: 60%;
+}
+
+/* 2 feuilles section 3 */
+.imgfeuille5{
+    position: absolute;
+    width: 12%;
+    left: 0;
+    transform: translateY(344%);
+}
+.imgfeuille6{
+    position: absolute;
+    width: 10%;
+    right: 0;
+    transform: translateY(0);
+}
+
+/* création du hr avec un z-index à 0 par rapport au h1
+pour effet trait coupé avec le background white du h1*/
+#trait-fin{
+    border: 1px solid rgb(230, 216, 216);
+    width: 80%;
+    margin: auto;
+    opacity: 0.5;
+    position: relative;
+    top:60px;
+    z-index: 0;
+}
+
+
+/*SECTION 4 'DES PRODUITS*/
+
+/* création h1 'Des produits...'avec un width différent du premier h1
+pour réduire ou augmenter l'espacement entre les lettres et le trait */
+section .titre2{
+    font-family: "caroline";
+    font-size: 4em;
+    font-weight: lighter;
+    text-align: center;
+    width: 520px;
+    margin: auto;
+    background-color:white;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+/* div englobant les 3 photos de la section 4'Des produits' pour les centrer */
+section .photovales{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    padding-bottom: 3%;
+}
+
+/* redimension des 3 photos */
+.img-sac {
+    width: 15%;
+}
+.img-panier {
+    width: 15%;
+}
+.img-pull {
+    width: 15%;
+}
+
+/* SECTION 6 LIV QUAL PAIE */
+.imgfeuille7{
+    position: absolute;
+    left: 0;
+    width: 20%;
+    transform: translateY(498%);
+}
+.imgfeuille8{
+    position: absolute;
+    right: 0;
+    width: 13%;
+    transform: translateY(1000%);
+}
+
+
+/***** Section newsletter *****/
+
+/* Le fond de la section newsletter */
+.background-news {
+    background-image: url('../images/clip.svg');
+    background-size: cover;
+}
+
+/* L'input de la new letter doit faire tout le long de l'image */
+.inputnewsletter { 
+    width: 100%;
+    margin-bottom: 1%;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* l'input de la newsletter ,'est pas collée aux bords */
+.marge-nl {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+/* Mise en forme du boutton */
+.btn {
+    border: none;
+    padding: 5px 28px 4px 28px;
+    border-radius: 5px;
+    background-color: var(--dark-green);
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+/*On supperpose le texte et le formulaire de la newsletter sur son image */
+.newsletter {
+    font-family: 'calibri', sans-serif;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* On met la phrase de la partie news letter en majuscule et on le met en forme */
+#newsletter {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+
+/* Mise en forme de la legend de l'input : aligné à gauche et gris */
+#label {
+    margin: 0;
+    text-align: left;
+    color: var(--dark-grey);
+}
+
+/* Retrait des marges de "adresse mail : " */
+#marge-adresse {
+    margin: 0;
+}
+
+/******section6 *****/
+
+/* On aligne les cards les unes à côté des autres */
+.section6 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'calibri', sans-serif;
+    padding-top: 1.5%;
+    padding-bottom: 3%;
+}
+
+/* titre des cards */
+.section6 h2 {
+    font-size: 1.5em;
+}
+
+/* Dimension des cards */
+.section6 div {
+    width: 33%;
+}
+
+/* On donne aux cards des marges pour aérer */
+.section6 div p, 
+.section6 div h2, 
+.section6 div img {
+    margin-left: 24%;
+    margin-right: 24%;
+}
+
+/*Taille des images des cards*/
+.trois-images {
+    width: 15vw;
+}
+
+/* La phrase origine française centré avec le logo */
+.originefr {
+    font-size: 4.2em;
+    font-family: 'caroline', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    margin: 3%;
+}
+
+.france { /* Logo France */
+    width: 8%;
+}
+
+/*section7*/
+
+.pbottom{
+    padding-bottom: 3%;
+}
+
+footer {
+    display: flex;
+    font-family: 'calibri';
+    width: 90%;
+    margin: auto;
+}
+
+footer div {
+    width: 33%;
+}
+
+footer div p {
+     font-size: 1.2em;
+}
+footer div a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.resaux {
+    width: 30px;
+}
+
+.contact {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+/*feuilles*/
+
+.img10 {
+    width: 20%;
+    position: absolute;
+    right: 1px;
+}
+.img11 {
+    width: 20%;
+    position: absolute;
+    left: 0;
+    transform: rotate(215deg);
+}
+
+.img-mobile {
+    display: none;
+}
+.img-pc {
+    display: block;
+}
+
+/***** Mode mobile *****/
+@media screen and (max-width: 1024px){
+
+/***** Header : gestion du hamburger *****/
+    hr { /* Le hr donnant l'illusion d'un background vert est plus fin en mobile */ 
+        border: 6px solid var(--dark-green);
+    }
+
+    .hamburger {/* Le hamburger qui apparait lorsqu'on est en mode mobile */
+        display: block;
+        width: 25px;
+        padding: 3%;
+        border-radius: 10px;
+        margin: 2%;
+        color: var(--black);
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        background-color: white;
+        border: var(--dark-green) solid 1px;
+    }
+    
+    .hamburger-line, .hamburger-line-end { /* Les lignes du dessin hamburger séparés d'un margin-bottom */
+        border-top-style: solid;
+        margin-bottom: 6px;
+        width: 25px; 
+    }
+    
+    .hamburger-line-end { /* La dernière ligne des hamburger ne doit pas avoir de marge pour respecter la forme carrée */
+        margin-bottom: 0px; 
+    }
+
+    /*Le header disparait en mode mobile */
+    .headerdroit, .headergauche {
+        display: none;
+    }
+   
+    .bandeau { /* Va placer le hamburger en haut à droite */
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .img-ellipse { /* L'image elipse du header n'est pas présente en mobile */
+        display: none;
+    }
+
+/**** Section 2 ****/
+    section .oups { /* Correction de la position de l'image */
+        margin-bottom: -15%;
+        padding-top: 9%;
+    }
+    
+    section .blocktext p { /* Second paragraphe de la dame qui tricote */
+        margin-left: -115%;
+        font-size: 1.7rem;
+        margin-top: 80%;
+        line-height: unset;
+    }
+
+    .text-intro p { /* Texte d'introduction */
+        width: 100%;
+        margin: auto;
+        font-size: 0.3em;
+        font-weight: bold;
+        line-height: unset;
+    }
+  
+    .imgfemme{ /* Photo de la femme qui tricote */
+        width: 40%;
+        margin: 25px;
+        padding-top: 20%;
+    }
+    .bloc { /* Texte à côté de l'image de la femme qui tricote */
+        display: block;
+        padding-top: unset;
+    }
+
+    .blocktext { /*Premier paragraphe du texte à côté de la dame qui tricote */
+        transform: translateY(-60%);
+        padding-top: 0%;   
+    }
+
+    .blocktext h3 {
+        line-height: unset;
+        height: 0;
+        font-size: 0.9rem;
+        font-weight: normal;
+    }
+    
+/**** Section 3 : des astuces pour... ***/
+    section .titre {
+        font-size: 2em;
+        width: 65%;
+    }      
+  
+    h2 { /* Cards : titre*/
+        font-size: 1.2em;
+    }
+
+    .cards { /* Configuration des cards */
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    
+    .imgnoeud { /* Images des cards */
+        width: 90%;
+        margin: auto;
+    }
+    .imgmaille {
+        width: 80%;
+        margin: auto
+    }
+
+    .imgyoutube{/* Au milieu des deux cards : deux logos youtube */
+        width: 68%;
+    }
+
+    .img-play-youtube { 
+        width: 30%;
+    }
+
+    .img-logo-youtube {
+        width: 90%;
+    }
+
+    .para-section-3 { /* Texte final de la section 3 */
+        font-size: 1.3em;
+        width: 95%;
+    }
+
+    #trait-fin {
+        width: 100%;
+        top: 27px;
+    }
+
+/**** Section 4 : des produits ****/
+
+    section .titre2 { /* Titre */
+        font-size: 2em;
+        width: 80%;
+    }
+    section .photovales { /* Les trois photos ovales : div générale */
+        gap: 25px;
+        padding-bottom: 10%;
+    }
+
+    .img-sac, .img-panier, .img-pull { /* Tailles des images ovales */
+        width: 25%;
+    }
+
+    .img-mobile { /* Les images ovales en version PC sont remplacés par des rondes */
+        display: block;
+    }
+
+    .img-pc {
+        display: none;
+    }
+
+/**** Section 5 : Newsletter ****/
+    .background-news{ /* Fond avec une image visible*/
+        background-position: right;
+    }
+
+    .inputnewsletter{ /* Zone qui permet de saisir son email */
+        border-radius: 5px;
+        margin-bottom: 4%;
+    }
+
+    #newsletter { /* Première phrase de la section */
+        font-size: 1.4em;
+        padding: 1% 2%;
+    }
+
+    #marge-adresse { /* Petite marge avec la phrase "Adresse mail :"*/
+        margin: 4%;
+        font-size: 1.1em;
+    }
+
+/**** Section 6 : livraison, qualité et paiement****/
+    .section6 { /* La section 6 ne doit plus être flexible en mode mobile*/
+        display: block;
+    }
+    .section6 div { /* Les div doivent prendre tout leur espaces*/
+        width: 100%;
+    }
+
+    .section6 div h2 { /* Titre des cards */
+        margin-top: -5%;
+        margin-bottom: 1%;
+    }
+
+    .trois-images { /* Cards : Les logos de carton, bouton et cadenas */
+        width: 35vw;
+    }
+
+    .section6 div p, .section6 div h2, .section6 div img { /* Marge des cards */
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .section6 div p { /* Mise en forme du texte des cards */
+        color: var(--dark-green);
+        font-weight: bold;
+        font-size: 1.4em;
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+    .section6 div p:nth-child(3) { /* Marge entre le sous titre de la cards et le texte */
+        margin-bottom: 5%;
+    }
+
+/***** Section 7 : origine FR ****/
+    .originefr { /* Phrase origine fr */
+        font-size: 2.4em;
+    }
+
+    .france{ /* Logo France */
+        width: 25%;
+    }
+
+/**** Footer ****/
+    footer { /*Petites marges à gauche et à droite du footer */
+        width: 95%;
+    }
+    footer div {
+        width: auto;
+    }
+    footer div p { /* Mise en forme du texte */
+        font-size: 0.7rem; 
+        font-weight: bold;
+        color: var(--dark-green);
+    }
+    footer div a { /* Mise en forme du texte cliquable */
+        color: var(--dark-green);
+        font-size: 0.7rem;
+        font-weight: bold;
+    }   
+    .footer-center-mobile { /* La partie centrale du footer est aérée par des marges */
+        margin: 0 4%;
+    }
+
+    .contact { /* Le mot contact est écarté des logos */
+        gap: 5px;
+    }
+
+    .copy { /* Partie ciopyright du footer est écarté du reste*/
+        margin: 10% -20%;
+    }
+    
+    .resaux { /* Logo des réseaux sociaux */
+        width: 16px;
+    }
+
+    #facebook{ /* EN mobile l'ordre des icones réseau change : twitter, facebook et pinterest */
+        order: 2;
+    }
+
+    #twitter {
+        order: 1;
+    }
+
+    #pinterest {
+        order: 3;
+    }
+
+    /***** Gestion des images de feuilles *****/
+    .imgfeuille1{
+        width: 12%;
+        top: 74%;
+     
+    }
+
+    .imgfeuille2 {
+        top: 30%;
+    }
+
+    .imgfeuille3 {
+        top: 15%;
+    }
+
+    .imgfeuille4 {
+        top: 67%;
+    }
+
+    .imgfeuille5 {
+        transform: translateY(-550%);
+    }
+
+    .imgfeuille6 {
+        transform: translateY(-814%);
+        z-index: 2;
+    }
+
+    .imgfeuille7 {
+        width: 25%;
+        transform: translateY(-1267%);
+        z-index: 2;
+    }
+
+    .imgfeuille8 {
+        width: 25%;
+        transform: translateY(-1500%);
+        z-index: 2;
+    }
+    .img11 {
+        width: 35%;
+        left: 0px  
+    }
+
+    .img10 {
+        width: 35%;
+        right: 0;
+    }
+    
+}

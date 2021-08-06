@@ -1,0 +1,234 @@
+body{
+    font-size: 16px;
+    margin: 0;
+}
+/*Variables*/
+:root {
+    --white: white;
+    --dark-green: #677E52;
+    --light-green: #b7ca79;
+    --grey: #b0cc99;
+    --beige: #f6e8b1;
+    --lanvander: #d1bfd5;
+    --black: #2c2c2c;
+    
+}
+@font-face {
+    font-family: "caroline";
+    src: url("../font/Caroline.otf");
+}
+
+/* HEADER */
+
+/* container pour cadrer sur un écran large */
+.container{
+        width: 90%;
+        margin-left: 8%;
+        margin-right: 8%;
+}
+
+/* bordure pour faire la séparation verte */
+.header{
+    border-bottom: 30px solid var(--grey);
+}
+
+/* pour écarter le logo de contact */
+.header2{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* logo  */
+.logo{
+    width: 40%;
+    padding-top: 10px;
+}
+
+/* alignement feuille et contact */
+.feuille-contact{
+    display: flex;
+    align-items: flex-end;
+    padding-right: 30px;
+}
+
+/* image feuille */
+header .feuille-contact .imgfeuille3{
+    width: 33%;
+    transform: rotate(-20deg) translateY(-30px);
+}
+
+/* titre contact */
+h1{
+    font-family: "caroline";
+    font-weight: lighter;
+    font-size: 6em;
+    color: var(--black);
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* SECTION */
+section{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 50px 40px 50px;
+}
+
+/* texte à gauche du formulaire */
+h3{
+    color: var(--black);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+/* taille de la div contenant tout le formulaire */
+.taille-form{
+    width: 60%;
+}
+
+/* taille de la div contenant le texte a gauche */
+.textleft{
+    width: 31%;
+}
+
+/* flex pour mettre les label à gauche des input */
+.formright{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* style bouton */
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+.btn input{
+    font-style: italic;
+    background-color: var(--grey);
+    transition: 300ms;
+    border-color: var(--dark-green );
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    box-shadow:2px 2px 2px gray;
+    font-size: 1em;
+    width: 100%;
+}
+.btn input:hover{
+    background-color: var(--dark-green);
+    color: var(--white);
+    transition: 300ms;
+}
+/* pour effacer les titres des input version mobile */
+.input p{
+    display: none;
+}
+#modif-taille-btn{
+    width: 30%;
+    margin-bottom: 0;
+    height: 50px;
+}
+
+/* label */
+
+/* taille du texte des label */
+p{
+    font-size: 0.8em;
+    color: var(--black);
+}
+.label{
+    width: 30%;
+}
+.label p{
+    margin-top: 0;
+    margin-bottom: 20%;
+}
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+}
+
+/* taille & espacement des input */
+.input{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* alignement texte label par rapport au input */
+.input input{
+    margin-bottom: 22.4px;
+    height: 30px;
+    width: 100%;
+}
+textarea{
+    width:100%;
+    margin-bottom: 22.4px;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:415px){
+
+    /* diminution logo/feuille/contact */
+    .logo{
+        width: 60%;
+        padding-top: 10px;
+    }
+    .imgfeuille3{
+        display: none;
+    }
+    h1{
+        font-size: 4em;
+    }
+
+    /* suppression du texte a gauche */
+    .textleft{
+        display: none;
+    }
+
+    /* suppression des label a gauche du input */
+    .label {
+        display: none;
+    }
+
+    /* creation des titres au dessus de chaque input */
+    .input p{
+        display: block;
+        font-size: 1.2em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 1%;
+    }
+    /* augmentation de la largeur des cases input+textarea */
+    .input input{
+        width: 140%;
+        margin-bottom: 0;
+    }
+    textarea{
+        width:140%;
+        margin-bottom: 10px;
+    }
+
+    /* enlever la marge au dessus de 'votre nom' */
+    section{
+        margin: 0;
+    }
+
+    /* diminution largeur bouton */
+    #modif-taille-btn{
+        width: 50%;
+        margin-top: 20px;
+    }
+    /* augmentation largeur de la div contenant le bouton */
+    .btn{
+        width: 140%;
+    }
+}
